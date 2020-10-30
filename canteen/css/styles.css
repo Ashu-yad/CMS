@@ -1,0 +1,42 @@
+body{
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+}
+
+#header-nav {
+  border-radius: 0;
+  border: 0;
+}
+
+
+#logo-img {
+  background: url('../images/Log_IIITL.png') no-repeat;
+  width: 75px;
+  height: 75px;
+  margin: 5px 10px 5px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand p {
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+
+.navbar-brand p span {
+  vertical-align: middle;
+}
