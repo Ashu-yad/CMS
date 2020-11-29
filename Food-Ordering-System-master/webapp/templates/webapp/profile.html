@@ -68,7 +68,37 @@
             </div>
         </div>
         </div>
-		</div>
+    </div>
+      <br>
+    
+    <div class="row">
+      <div class="col-md-11 toppad">
+        <h2>Previous Orders</h2>
+        <hr>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Amount</th>
+                    <th>Ordered on</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in user_ord %}
+                <tr>
+                    <td>Order#_{{order.id}}</td>
+                    <td>{{order.total_amount}}</td>
+                    <td>{{order.timestamp}}</td>
+                    <td>{{order.status}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+      </div>
+    </div>
+    <br>
+
 	</div>
   <br>
 {% endblock%}

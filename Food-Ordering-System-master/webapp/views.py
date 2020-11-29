@@ -84,8 +84,10 @@ def customerProfile(request,pk=None):
 		user = User.objects.get(pk=pk)
 	else:
 		user=request.user
+
+	user_ord = Order.objects.filter(orderedBy = user)
 	
-	return render(request,'webapp/profile.html',{'user':user})
+	return render(request,'webapp/profile.html',{'user':user, 'user_ord': user_ord})
 
 
 #Create customer profile 
