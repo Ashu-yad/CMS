@@ -352,7 +352,7 @@ def orderlist(request):
 				x = Order.ORDER_STATE_WAITING
 			order[0].status = x
 			order[0].save()
-			if select == 3:
+			if select == 3 or select == 5:
 				rest = Restaurant.objects.get(id = request.user.restaurant.id)
 				rest.order_queue -= 1
 				rest.save()
