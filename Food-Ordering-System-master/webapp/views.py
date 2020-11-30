@@ -87,7 +87,7 @@ def customerProfile(request,pk=None):
 
 	user_ord = Order.objects.filter(orderedBy = user)
 	
-	return render(request,'webapp/profile.html',{'user':user, 'user_ord': user_ord})
+	return render(request,'webapp/profile.html',{'user':user, 'user_ord':user_ord})
 
 
 #Create customer profile 
@@ -151,7 +151,12 @@ def checkout(request):
 		addr  = request.POST['address']
 		ordid = request.POST['oid']
 		Order.objects.filter(id=int(ordid)).update(delivery_addr = addr,
-                                                    status=Order.ORDER_STATE_PLACED)
+																										status=Order.ORDER_STATE_PLACED)
+
+		ord = Order.objects.get(id = int(ordid))
+		rest = Restaurant.objects.get(id = int(ord.r_id.id))
+		rest.order_queue += 1
+		rest.save()
 		return redirect('/orderplaced/')
 	else:	
 		cart = request.COOKIES['cart'].split(",")
@@ -185,8 +190,9 @@ def checkout(request):
 		context={
 			"items":items,
 			"totalprice":totalprice,
-			"oid":oid.id
-		}	
+			"oid":oid.id,
+			"rid":oid.r_id
+		}
 		return render(request,'webapp/order.html',context)
 
 
@@ -346,6 +352,10 @@ def orderlist(request):
 				x = Order.ORDER_STATE_WAITING
 			order[0].status = x
 			order[0].save()
+			if select == 3:
+				rest = Restaurant.objects.get(id = request.user.restaurant.id)
+				rest.order_queue -= 1
+				rest.save()
 
 	orders = Order.objects.filter(r_id=request.user.restaurant.id).order_by('-timestamp')
 	corders = []
@@ -379,9 +389,9 @@ def orderlist(request):
 
 		x = order.status
 		if x == Order.ORDER_STATE_WAITING:
-		    continue
+				continue
 		elif x == Order.ORDER_STATE_PLACED:
-		    x = 1
+				x = 1
 		elif x == Order.ORDER_STATE_ACKNOWLEDGED:
 			x = 2
 		elif x == Order.ORDER_STATE_COMPLETED:
@@ -403,6 +413,7 @@ def orderlist(request):
 
 	return render(request,"webapp/order-list.html",context)
 	
+
 
 
 
