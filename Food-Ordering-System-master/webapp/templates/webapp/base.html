@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{% block title %}FoodApp{% endblock title %}</title>
+  <title>{% block title %}iCanteen{% endblock title %}</title>
   <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/bootstrap.min.css'%}">
 
   <link href="/static/webapp/css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -31,14 +31,14 @@
                 <a class="nav-link text-light" href="{% url 'index' %}"><font size="3">&nbsp; <strong>Home</strong> </font></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="{% url 'restuarant' %}"><font size="3">&nbsp;<strong>Restuarants</strong></font></a>
+                <a class="nav-link text-light" href="{% url 'restuarant' %}"><font size="3">&nbsp;<strong>Canteens</strong></font></a>
             </li>
             
         </ul>
     </div>
     <div class="mx-auto my-2 order-0 order-md-1 position-relative">
         <a class="mx-auto" href="#">
-            <img  src="/static/webapp/images/logo.png" style="height: 90px;width: 170px;" alt="Home" class="rounded-circle img-responsive">
+            <img  src="/static/webapp/images/logo2.png" style="height: 90px;width: 170px;" alt="Home" class="rounded-circle img-responsive">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
             <span class="navbar-toggler-icon"></span>
@@ -75,12 +75,14 @@
 
 <div class="footer">
     <div class="container-fluid">
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="#"> MohdAsif</a>
+    <div class="footer-copyright text-center py-3"> 
+        <a href="https://iiitl.ac.in/"> IIITL Home </a> |
+        <a href="https://www.facebook.com/iiitlucknow/"> Facebook </a> |
+        <a href="https://www.instagram.com/iiitlucknow/?hl=en"> Instagram</a>
       </div>
     
+   </div>
   </div>
-</div>
 
 <script type="text/javascript" src="{%static 'webapp/js/jquery.min.js'%}">
 	</script>

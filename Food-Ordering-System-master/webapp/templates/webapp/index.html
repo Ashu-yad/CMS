@@ -1,3 +1,5 @@
+<!--home page--> 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +7,7 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{% block title %}FoodApp{% endblock title %}</title>
+  <title>{% block title %}iCanteen{% endblock title %}</title>
   <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/bootstrap.min.css'%}">
 
   <link href="/static/webapp/css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -18,7 +20,11 @@
 
 <style type="text/css">
   .big-banner{
-    background-image: url('/static/webapp/images/slide_1.jpg');
+    /* home page background */
+    background-image: url('/static/webapp/images/collegeBuilding.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
   .i-am-center{
     margin-left:26%; max-width: 100%;
@@ -36,6 +42,11 @@
   .footer, .push {
     height: 155px; 
 }
+.col {
+  margin-left: 12%;
+  margin-top: 8%;
+  font-size: larger;
+}
 </style>
 </head>
 <body>
@@ -51,7 +62,7 @@
     </div>
     <div class="mx-auto my-2 order-0 order-md-1 position-relative">
         <a class="mx-auto" href="#">
-            <img  src="/static/webapp/images/logo.png" style="height: 80px;" alt="Home" class="rounded-circle img-responsive">
+            <img  src="/static/webapp/images/logo2.png" style="height: 80px;" alt="Home" class="rounded-circle img-responsive">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
             <span class="navbar-toggler-icon"></span>
@@ -60,7 +71,7 @@
     <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
         <ul class="navbar-nav mr-auto text-center">
             <li class="nav-item">
-                <a class="nav-link text-light" href="{% url 'rlogin'%}"> &nbsp;<strong>For Restaurants</strong> </a>
+                <a class="nav-link text-light" href="{% url 'rlogin'%}"> &nbsp;<strong>For Canteen</strong> </a>
             </li>
         </ul>
     </div>
@@ -68,7 +79,7 @@
 
 </nav>
 
-<div class="jumbotron big-banner" style="height: 500px; width: 100%; padding-top:100px;" >
+<div class="jumbotron big-banner" style="height: 800px; width: 100%; padding-top:100px;" >
 	<div class="container">
 		<div class="row">
 			<div class="col">
@@ -97,7 +108,7 @@
 		<div class="ordering-section" id="Order">
 			<div class="container">
 				<div class="ordering-section-head text-center wow bounceInRight" data-wow-delay="0.4s">
-					<h3>Ordering food was never so easy</h3>
+					<h3 >Prebooking food was never so easy</h3>
 					<div class="dotted-line">
 						<h4>Just 4 steps to follow </h4>
 					</div>
@@ -106,24 +117,24 @@
 				<div class="row ">
 					<div class="col-sm-2 col-md-2">
 						<div class="thumbnail borders text-light">
-							<p>Choose <span>Your Restaurant</span></p>
+							<p>Choose <span>Your Canteen</span></p>
 						</div>
 					</div>
 					<div class="col-sm-2 col-md-2 ">
 						<div class="thumbnail borders text-light">
 						
-							<p>Order  <span>Your Cuisine</span></p>
+							<p>Book  <span>Your Food</span></p>
 						</div>
 					</div>
 					<div class="col-sm-2 col-md-2">
 						<div class="thumbnail borders text-light" >
-							<p>Pay   <span> online </span></p>
-							<label></label>
+							<p> Wait <br> and <br> collect </p>
+							<!-- <label></label> -->
 						</div>
 					</div>
 					<div class="col-sm-2 col-md-2">
 						<div class="thumbnail borders text-light">
-							<p>Enjoy <span>your food </span></p>
+							<p>Enjoy <span> </span></p>
 							<label></label>
 							
 						</div>
@@ -135,7 +146,7 @@
 		</div>
 	</div>
 
-<div class="container col-md-9">
+<!-- <div class="container col-md-9">
 		<div class="top-restaurent-head">
 						<h3>Top Restaurants</h3>
 		</div> 
@@ -191,8 +202,8 @@
 	</div>
 
 <br>
-<br>
-<div class="container col-md-9">
+<br> -->
+<!-- <div class="container col-md-9">
 	<div class="top-cuisine-head">
 			<h3>Top Cuisines</h3>
 	</div>
@@ -279,19 +290,21 @@
               </div>
               <div class="clearfix"></div>
 	</div>
-</div>
+</div> -->
 
 <br>
 <br>
 <br>
 <div class="footer">
-		<div class="container">
-			   <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="#"> MohdAsif</a>
-			
-		</div>
-	</div>
- 
+  <div class="container-fluid">
+  <div class="footer-copyright text-center py-3"> 
+      <a href="https://iiitl.ac.in/"> IIITL Home </a> |
+      <a href="https://www.facebook.com/iiitlucknow/"> Facebook </a> |
+      <a href="https://www.instagram.com/iiitlucknow/?hl=en"> Instagram</a>
+    </div>
+  
+ </div>
+</div>
 				
 <script type="text/javascript" src="{%static 'webapp/js/jquery.min.js'%}">
 	</script>

@@ -1,7 +1,7 @@
 body{
 	padding:0;
 	margin:0;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 }
 body a{
     transition:0.5s all;
@@ -241,7 +241,7 @@ a.simpleCart_empty {
 }
 .line h2{
     color:#FFFFFF;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 	font-size:2.6em;
 	font-weight:500;
 }
@@ -278,7 +278,7 @@ a.simpleCart_empty {
 }
 .ordering-section-head h3{
 	color: #515151;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 	font-size: 2.6em;
 	font-weight: 500;
 }
@@ -307,7 +307,7 @@ a.simpleCart_empty {
 }
 .special-offers-section-head h4{
 	color: #515151;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 	font-size: 2em;
 	font-weight: 700;
 }
@@ -317,7 +317,7 @@ a.simpleCart_empty {
 }
 .top-restaurent-head h3{
 	color: #515151;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 	font-size: 2.1em;
 	font-weight: 700;
 }
@@ -343,7 +343,7 @@ a.simpleCart_empty {
 }
 .top-cuisine-head h3{
 	color: #515151;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 	font-size: 2.1em;
 	font-weight: 700;
 }
@@ -496,7 +496,7 @@ a.simpleCart_empty {
 .icon-data h4{
 	color:#5BBD50;
 	font-size:1.4em;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 	font-weight:700;
 	margin:0.8em 0 0.5em 0;
 }
@@ -512,7 +512,7 @@ a.simpleCart_empty {
 .service-section-top-row-grid1 h3{
 	font-size:2.3em;
 	font-weight:500;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 	color:#FFCC00;
 	padding-top: 1em;
 }
@@ -570,7 +570,7 @@ a.simpleCart_empty {
 	color:#FFFFFF;
 	font-size:1.5em;
 	font-weight:700;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 	margin-bottom:1.2em;
 }
 .contact-section-grid ul li{
@@ -969,10 +969,10 @@ ul.previous li a{
 }
 .dreamcrub{
 	margin:2em 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 }
 .mens-toolbar {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 	margin-bottom: 2em;
 }
 .mens-toolbar .sort {
@@ -1041,7 +1041,7 @@ ul.women_pagenation li a:hover{
 }
 .category{
 	margin-top:2em;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 }
 ul.category_nav{
 	padding:0;
@@ -1094,7 +1094,7 @@ ul.category_nav li a:hover {
 }
 .span_2_of_a1 {
 	width:60.1%;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 }
 .span_2_of_a1 h1{
 	color:#333;
@@ -1221,7 +1221,7 @@ h3.like, h3.recent{
 	color: #333;
 	font-size: 1.7em;
 	text-transform: uppercase;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 	font-style: italic;
 	font-weight: bold;
 	margin-bottom: 1em;
@@ -1258,7 +1258,7 @@ h3.recent{
 }
 .grid-flex{
 	margin:10px 0 20px 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 }
 .nbs-flexisel-item a {
 	color: #000;
@@ -1281,7 +1281,7 @@ h3.recent{
 .sap_tabs{
 	clear:both;
 	padding: 1em 0 4em;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 }
 .facts {
 	border: 1px solid #E6E6E6;
@@ -1462,11 +1462,11 @@ p.comment-form-author {
 }
 .span_1_of_contact{
 	width:60.1%;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 }
 .span_2_of_contact_right {
 	width:36.2%;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 }
 .contact_grid{
 	display: block;
@@ -1611,10 +1611,10 @@ ul.previous li a{
 }
 .dreamcrub{
 	margin:2em 0 5em 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 }
 .mens-toolbar {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 	margin-bottom: 2em;
 }
 .mens-toolbar .sort {
@@ -1980,7 +1980,7 @@ address {
 .follow-us  h3 {
 	font-weight: 600;
 	font-size: 2em;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Times New Roman", Times, serif;
 }
 .follow-us i{
 	width:45px;
@@ -2096,7 +2096,7 @@ address {
 	font-size: 2em;
 	font-weight:700;
 	color: #000000;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 	margin-bottom:1em;
 }
 /**** Drop Down *********/
@@ -2273,7 +2273,7 @@ address {
 	color:#000000;
 	font-size:2.2em;
 	font-weight:700;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 }
 .order-form-head p{
 	color:#000000;
@@ -2285,7 +2285,7 @@ address {
 	font-size:1.6em;
 	font-weight:700;
 	margin-bottom:0.5em;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 }
 .order-form-grid span{
 	font-size:16px;
@@ -2327,7 +2327,7 @@ address {
 	color:#000000;
 	font-size:2em;
 	font-weight:500;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 	margin:5px 0 12px 0;
 }
 .logo-title{
@@ -2352,7 +2352,7 @@ address {
 	font-weight:600;
 	display: block;
 	margin: 0 0.9em 0.3em 0;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 }
 a.morebtn{
   border: none;
@@ -2362,7 +2362,7 @@ a.morebtn{
   background: #5BBD50;
   font-size: 1.4em;
   font-weight: 700;
-  font-family: 'Lobster Two', cursive;
+  font-family: "Times New Roman", Times, serif;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -2380,7 +2380,7 @@ a.morebtn{
 	background:#5BBD50;
 	font-size:1.4em;
 	font-weight:700;
-	font-family: 'Lobster Two', cursive;
+	font-family: "Times New Roman", Times, serif;
 	border-radius:20px;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
@@ -3013,7 +3013,7 @@ a.morebtn{
 	}
 	.dreamcrub {
 		margin: 1em 0 2.5em 0;
-		font-family: 'Roboto', sans-serif;
+		font-family: "Times New Roman", Times, serif;
 	}
 	.login-left {
 		margin-bottom: 3em;
