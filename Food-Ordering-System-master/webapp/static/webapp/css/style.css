@@ -4,8 +4,8 @@ body{
 	font-family: "Times New Roman", Times, serif;
 }
 
-.btn-success {
-	color: #003b68;
+.btn {
+	background-color: #003b68;
 }
 
 body a{
