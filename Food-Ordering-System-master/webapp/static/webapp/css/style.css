@@ -3,6 +3,11 @@ body{
 	margin:0;
 	font-family: "Times New Roman", Times, serif;
 }
+
+.btn-success {
+	color: #003b68;
+}
+
 body a{
     transition:0.5s all;
 	-webkit-transition:0.5s all;
