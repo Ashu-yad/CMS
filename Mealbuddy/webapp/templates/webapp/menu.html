@@ -9,7 +9,7 @@
 		<br/>
 		<b>Location: </b><a class="text-success"><strong>{{rlocation}}</strong></a>
 		<br>
-		<b >For 1 Person:</b> <a class="text-success">&#x20b9;{{rmin}}</a>
+		<b >Max order :</b> <a class="text-success">&#x20b9;{{rmin}}</a>
 	</font>
 	</p>
 	</div>
@@ -24,6 +24,7 @@
 				<table class="table table-hover table-bordered">
 					<thead>
 						<th>Item Name</th>
+						<th>Item Image</th>
 						<th>Category</th>
 						<th>Price</th>
 						<th>Add</th>
@@ -31,31 +32,32 @@
 					{% for x in items %}
 					<tr>
 					<td>{{x.0}}</td>
-					<td>{{x.1}}</td>
-					<td>&#x20b9; {{x.2}}</td>
-					{% if x.4 == "Open" %}
-					{% if x.5 > 0 %}
+					<td><img src = "{{x.1.url}}" height = 100px></td>
+					<td>{{x.2}}</td>
+					<td>&#x20b9; {{x.3}}</td>
+					{% if x.5 == "Open" %}
+					{% if x.6 > 0 %}
 					<td>
-                  <div class="form-group" style="width:40%;">
-     
-            		<div class="input-group-btn">
-                		<button id="down" class="btn btn-default" 
-      				 onclick="if(document.querySelector('#itemno{{x.3}}').innerHTML>0){
-                	document.querySelector('#itemno{{x.3}}').innerHTML--;
-                	minuscounter('{{x.3}}');
-                	}">
-                <span class="glyphicon glyphicon-minus"></span></button>
-            </div>
-            <span id='itemno{{x.3}}'> 0 </span>
-            <div class="input-group-btn">
-                <button id="up" class="btn btn-default" 
-                onclick="
-                if(document.querySelector('#itemno{{x.3}}').innerHTML<{{x.5}}){
-                	document.querySelector('#itemno{{x.3}}').innerHTML++;
-                	pluscounter('{{x.3}}');
-                	}"><span class="glyphicon glyphicon-plus"></span></button>
-            	</div>
-        		</div>	
+									<div class="form-group" style="width:40%;">
+		 
+								<div class="input-group-btn">
+										<button id="down" class="btn btn-default" 
+							 onclick="if(document.querySelector('#itemno{{x.4}}').innerHTML>0){
+									document.querySelector('#itemno{{x.4}}').innerHTML--;
+									minuscounter('{{x.4}}');
+									}">
+								<span class="glyphicon glyphicon-minus"></span></button>
+						</div>
+						<span id='itemno{{x.4}}'> 0 </span>
+						<div class="input-group-btn">
+								<button id="up" class="btn btn-default" 
+								onclick="
+								if(document.querySelector('#itemno{{x.4}}').innerHTML<'{{x.6}}'){
+									document.querySelector('#itemno{{x.4}}').innerHTML++;
+									pluscounter('{{x.4}}');
+									}"><span class="glyphicon glyphicon-plus"></span></button>
+							</div>
+						</div>	
 					</td>
 					{% else %}
 					<td>
@@ -100,3 +102,4 @@ var cart = [];
 	};
 </script>
 {% endblock %}
+

@@ -128,6 +128,7 @@ def restuarantMenu(request,pk=None):
 		for content in item:
 			temp=[]
 			temp.append(content.fname)
+			temp.append(content.item_image)
 			temp.append(content.category)
 			temp.append(i.price)
 			temp.append(i.id)
@@ -179,6 +180,8 @@ def checkout(request):
 				oiid.save()
 				totalprice += int(y)*it[0].price
 				item.append(it[0].item_id.fname)
+				item.append(it[0].item_id.item_image)
+				item.append(it[0].item_id.category)
 				it[0].quantity = it[0].quantity - y
 				it[0].save()
 				item.append(y)

@@ -44,6 +44,7 @@ class Item(models.Model):
 	id 			= models.AutoField(primary_key=True)
 	fname 		= models.CharField(max_length=30,blank=False)
 	category 	= models.CharField(max_length=50,blank=False)
+	item_image = models.FileField(blank=False)
 
 	def __str__(self):
 		return self.fname
