@@ -85,7 +85,7 @@ def customerProfile(request,pk=None):
 	else:
 		user=request.user
 
-	user_ord = Order.objects.filter(orderedBy = user)
+	user_ord = Order.objects.filter(orderedBy = user).order_by('-timestamp')
 	
 	return render(request,'webapp/profile.html',{'user':user, 'user_ord':user_ord})
 
